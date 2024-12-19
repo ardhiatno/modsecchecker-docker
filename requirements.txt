@@ -1,0 +1,9 @@
+rstr
+exrex
+requests
+pybind11
+wheel
+setuptools
+jinja2
+textx
+# pymodsecurity

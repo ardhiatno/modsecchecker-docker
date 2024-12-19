@@ -1,3 +1,25 @@
+# Building
+- Using makefile 
+```bash
+make build
+```
+- Manually
+```bash
+docker build -t modsecchecker:3.9-3.0.4-slim .
+```
+
+# Running container
+```bash
+docker run -it --name modsecchecker modsecchecker:3.9-3.0.4-slim bash
+```
+
+# Run test
+```bash
+python modsec-checker.py -f owasp-modsecurity-crs/ -u https://dvwa-dev.id
+```
+
+
+
 # ModSecurity rules checked
 This script can check ModSecurity rules against some different WAF and is used as PoC for [following article](https://waf.ninja/modsecurity-rules-verification/). It uses following algorithm:
 - parse security rules configuration files
